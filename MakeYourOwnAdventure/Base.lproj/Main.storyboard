@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ebp-LI-WHh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iV7-2C-wFq">
+            <objects>
+                <navigationController id="Ebp-LI-WHh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gma-rX-dY9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bWr-fW-OpM" kind="relationship" relationship="rootViewController" id="cLm-dW-L8q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rn-67-eyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1509" y="222"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rN8-ut-hmU">
+            <objects>
+                <viewController id="bWr-fW-OpM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3h-oA-HEe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rLo-Gz-KpJ">
+                                <rect key="frame" x="40" y="148" width="334" height="432"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">An immense tiger wakes in an empty room. 
+
+A door opens into a hallway... 
+
+What should she do?</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLX-KW-a6N">
+                                <rect key="frame" x="92" y="660" width="230" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Leap through the door and roar!"/>
+                                <connections>
+                                    <segue destination="x1H-IG-0ED" kind="show" id="wx3-bp-ExV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnu-je-POw">
+                                <rect key="frame" x="64.5" y="731" width="285" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stalk to the door, peek down the hallway"/>
+                                <connections>
+                                    <segue destination="iPh-ox-Ksk" kind="show" id="nhc-pb-U1D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VI5-QH-WDE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cnu-je-POw" firstAttribute="top" secondItem="dLX-KW-a6N" secondAttribute="bottom" constant="40" id="0Ss-Nc-3es"/>
+                            <constraint firstItem="rLo-Gz-KpJ" firstAttribute="top" secondItem="VI5-QH-WDE" secondAttribute="top" constant="60" id="29j-V8-m5r"/>
+                            <constraint firstItem="VI5-QH-WDE" firstAttribute="bottom" secondItem="cnu-je-POw" secondAttribute="bottom" constant="100" id="LCB-Cu-boi"/>
+                            <constraint firstItem="VI5-QH-WDE" firstAttribute="trailing" secondItem="rLo-Gz-KpJ" secondAttribute="trailing" constant="40" id="QhX-nW-0hX"/>
+                            <constraint firstItem="dLX-KW-a6N" firstAttribute="top" secondItem="rLo-Gz-KpJ" secondAttribute="bottom" constant="80" id="cPQ-U6-0ET"/>
+                            <constraint firstItem="dLX-KW-a6N" firstAttribute="centerX" secondItem="VI5-QH-WDE" secondAttribute="centerX" id="cb6-Th-TIZ"/>
+                            <constraint firstItem="cnu-je-POw" firstAttribute="centerX" secondItem="VI5-QH-WDE" secondAttribute="centerX" id="eoI-64-uMz"/>
+                            <constraint firstItem="rLo-Gz-KpJ" firstAttribute="leading" secondItem="VI5-QH-WDE" secondAttribute="leading" constant="40" id="gTd-jB-DCg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hyR-7v-buP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVw-8L-rqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="222"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AYt-p8-dvJ">
+            <objects>
+                <viewController id="x1H-IG-0ED" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zx3-Wy-dBp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1IU-oS-MsW">
+                                <rect key="frame" x="40" y="148" width="334" height="432"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">An old man is startled out of his chair. But he recovers, and aims his rifle right at the tiger with a smile.
+
+What should he do?</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd9-KJ-KaF">
+                                <rect key="frame" x="92" y="660" width="230" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Leap through the door and roar!"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G32-7w-TtL">
+                                <rect key="frame" x="64.5" y="731" width="285" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stalk to the door, peek down the hallway"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yfP-76-Xqn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yfP-76-Xqn" firstAttribute="trailing" secondItem="1IU-oS-MsW" secondAttribute="trailing" constant="40" id="1UG-d0-pgF"/>
+                            <constraint firstItem="G32-7w-TtL" firstAttribute="top" secondItem="cd9-KJ-KaF" secondAttribute="bottom" constant="40" id="CUH-Dy-f9X"/>
+                            <constraint firstItem="G32-7w-TtL" firstAttribute="centerX" secondItem="yfP-76-Xqn" secondAttribute="centerX" id="DbR-Ar-ljg"/>
+                            <constraint firstItem="1IU-oS-MsW" firstAttribute="leading" secondItem="yfP-76-Xqn" secondAttribute="leading" constant="40" id="Vcy-eK-9Gz"/>
+                            <constraint firstItem="cd9-KJ-KaF" firstAttribute="centerX" secondItem="yfP-76-Xqn" secondAttribute="centerX" id="Xs5-uz-7Qr"/>
+                            <constraint firstItem="cd9-KJ-KaF" firstAttribute="top" secondItem="1IU-oS-MsW" secondAttribute="bottom" constant="80" id="boB-OM-Qsx"/>
+                            <constraint firstItem="yfP-76-Xqn" firstAttribute="bottom" secondItem="G32-7w-TtL" secondAttribute="bottom" constant="100" id="qnZ-YM-IjJ"/>
+                            <constraint firstItem="1IU-oS-MsW" firstAttribute="top" secondItem="yfP-76-Xqn" secondAttribute="top" constant="60" id="vWi-Em-uEE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ibs-rr-Gog"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQz-Iw-qqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="99"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q3h-5Q-T6o">
+            <objects>
+                <viewController id="iPh-ox-Ksk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aOS-TC-rnv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="An old man sleeps on a chair in the hallway. He has a rifle." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0O3-aF-5se">
+                                <rect key="frame" x="40" y="148" width="334" height="432"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eot-Rt-35n">
+                                <rect key="frame" x="92" y="660" width="230" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Leap through the door and roar!"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfo-ZT-gIn">
+                                <rect key="frame" x="64.5" y="731" width="285" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stalk to the door, peek down the hallway"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tEI-5u-SGc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yfo-ZT-gIn" firstAttribute="top" secondItem="Eot-Rt-35n" secondAttribute="bottom" constant="40" id="7A5-tX-UMe"/>
+                            <constraint firstItem="0O3-aF-5se" firstAttribute="leading" secondItem="tEI-5u-SGc" secondAttribute="leading" constant="40" id="Koi-Vh-760"/>
+                            <constraint firstItem="tEI-5u-SGc" firstAttribute="bottom" secondItem="yfo-ZT-gIn" secondAttribute="bottom" constant="100" id="bv2-NP-87W"/>
+                            <constraint firstItem="Eot-Rt-35n" firstAttribute="top" secondItem="0O3-aF-5se" secondAttribute="bottom" constant="80" id="cUj-UL-6Np"/>
+                            <constraint firstItem="yfo-ZT-gIn" firstAttribute="centerX" secondItem="tEI-5u-SGc" secondAttribute="centerX" id="egK-9c-FHT"/>
+                            <constraint firstItem="0O3-aF-5se" firstAttribute="top" secondItem="tEI-5u-SGc" secondAttribute="top" constant="60" id="om5-qc-iZ1"/>
+                            <constraint firstItem="tEI-5u-SGc" firstAttribute="trailing" secondItem="0O3-aF-5se" secondAttribute="trailing" constant="40" id="wJf-Lm-fMS"/>
+                            <constraint firstItem="Eot-Rt-35n" firstAttribute="centerX" secondItem="tEI-5u-SGc" secondAttribute="centerX" id="wVM-wE-g0B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vzp-rp-Kdl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tch-vb-aZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="794"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
