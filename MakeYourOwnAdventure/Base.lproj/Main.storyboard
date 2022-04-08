@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="rN8-ut-hmU">
             <objects>
-                <viewController id="bWr-fW-OpM" sceneMemberID="viewController">
+                <viewController id="bWr-fW-OpM" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q3h-oA-HEe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +83,7 @@ What should she do?</string>
         <!--View Controller-->
         <scene sceneID="AYt-p8-dvJ">
             <objects>
-                <viewController id="x1H-IG-0ED" sceneMemberID="viewController">
+                <viewController id="x1H-IG-0ED" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zx3-Wy-dBp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,7 @@ What should he do?</string>
         <!--View Controller-->
         <scene sceneID="Q3h-5Q-T6o">
             <objects>
-                <viewController id="iPh-ox-Ksk" sceneMemberID="viewController">
+                <viewController id="iPh-ox-Ksk" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aOS-TC-rnv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
